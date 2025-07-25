@@ -29,83 +29,46 @@ const Projects = () => {
     <section id="projects" className="py-20 section-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            My Projects
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 hover:scale-105 smooth-transition animate-float">
+            Featured Projects
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            The projects highlighted below represent a glimpse of my work. You can explore the full collection on my GitHub.
+            A showcase of my recent work and technical achievements
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <Card
-              key={index}
-              className="overflow-hidden project-shadow smooth-transition hover:hover-shadow hover:scale-105 group"
-            >
-              {/* Project Image */}
-              <div className="relative overflow-hidden">
+            <Card key={index} className="overflow-hidden hover-shadow smooth-transition group hover:scale-[1.02] animate-float" style={{animationDelay: `${index * 200}ms`}}>
+              <div className="relative h-64 overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-48 object-cover group-hover:scale-110 smooth-transition"
+                  className="w-full h-full object-cover group-hover:scale-110 smooth-transition"
                 />
-                <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 smooth-transition" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 smooth-transition" />
               </div>
-
-              <CardHeader className="pb-4">
-                <CardTitle className="text-xl font-semibold text-foreground">
-                  {project.title}
-                </CardTitle>
-              </CardHeader>
-
-              <CardContent className="space-y-4">
-                <p className="text-muted-foreground leading-relaxed">
-                  {project.description}
-                </p>
-
-                {/* Technologies */}
-                <div className="flex flex-wrap gap-2">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary smooth-transition">{project.title}</h3>
+                <p className="text-muted-foreground mb-4">{project.description}</p>
+                <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, techIndex) => (
-                    <Badge
-                      key={techIndex}
-                      variant="secondary"
-                      className="text-xs font-medium hover:scale-105 smooth-transition"
-                    >
+                    <Badge key={techIndex} variant="secondary" className="hover:scale-110 smooth-transition">
                       {tech}
                     </Badge>
                   ))}
                 </div>
-
-                {/* Action Buttons */}
-                <div className="flex gap-3 pt-2">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="flex-1 hover:scale-105 smooth-transition"
-                    asChild
-                  >
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Github className="h-4 w-4 mr-2" />
-                      View Code
+                <div className="flex space-x-4">
+                  <Button variant="outline" size="sm" asChild className="hover:scale-110 smooth-transition">
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                      <Github className="mr-2 h-4 w-4" />
+                      GitHub
                     </a>
                   </Button>
                   {project.demo !== "#" && (
-                    <Button
-                      size="sm"
-                      className="flex-1 hover:scale-105 smooth-transition"
-                      asChild
-                    >
-                      <a
-                        href={project.demo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <ExternalLink className="h-4 w-4 mr-2" />
+                    <Button size="sm" asChild className="hover:scale-110 smooth-transition">
+                      <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="mr-2 h-4 w-4" />
                         Live Demo
                       </a>
                     </Button>

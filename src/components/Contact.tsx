@@ -271,31 +271,31 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            {/* Resume Download */}
-            <Card className="project-shadow smooth-transition hover:hover-shadow">
-              <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-semibold text-foreground mb-4">
-                  Ready to Work Together?
-                </h3>
-                <p className="text-muted-foreground mb-6">
-                  Download my resume to learn more about my experience and skills.
-                </p>
-                <Button
-                  size="lg"
-                  className="hover:scale-105 smooth-transition"
-                  asChild
-                >
-                  <a
-                    href="https://drive.google.com/file/d/1UuheWlCprlyVMFr5QAaORv6f33bg0f9J/view?usp=drive_link"
-                    target="_blank"
-                    rel="noopener noreferrer"
+            {/* Resume Download - Aesthetic Design */}
+            <div className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-gray-600 to-gray-400 rounded-lg blur opacity-25 group-hover:opacity-75 smooth-transition"></div>
+              <Card className="relative p-8 bg-black/80 dark:bg-white/5 backdrop-blur-sm border border-gray-300/20">
+                <CardContent className="text-center space-y-6">
+                  <h3 className="text-3xl font-bold text-white dark:text-gray-100">Resume Download</h3>
+                  <p className="text-gray-200 dark:text-gray-300 text-lg">
+                    Access my complete professional profile
+                  </p>
+                  <Button
+                    asChild
+                    size="lg"
+                    className="bg-transparent border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/50 hover:scale-110 smooth-transition backdrop-blur-sm px-8 py-4 text-lg font-semibold"
                   >
-                    <Download className="h-4 w-4 mr-2" />
-                    Download Resume
-                  </a>
-                </Button>
-              </CardContent>
-            </Card>
+                    <a
+                      href="https://drive.google.com/uc?export=download&id=1UuheWlCprlyVMFr5QAaORv6f33bg0f9J"
+                      download="Chandavolu_Naga_Chaitanya_Resume.pdf"
+                    >
+                      <Download className="mr-3 h-5 w-5 animate-bounce" />
+                      Download Resume
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </div>

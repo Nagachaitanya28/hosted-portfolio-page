@@ -29,13 +29,18 @@ const Hero = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Text Content */}
             <div className="text-white space-y-8">
-              {/* Code Block Image */}
-              <div className="bg-black/20 backdrop-blur-sm rounded-lg p-6 border border-white/10">
-                <img
-                  src="/lovable-uploads/2f37e0f6-2ce9-43ba-8e48-6de968f7d0a3.png"
-                  alt="Python Code - Chandavolu Naga Chaitanya"
-                  className="w-full h-auto rounded-md"
-                />
+              {/* Floating Animation Elements */}
+              <div className="relative">
+                <div className="grid grid-cols-3 gap-4 mb-8">
+                  <div className="w-16 h-16 bg-gray-800/30 rounded-lg animate-pulse hover:scale-110 smooth-transition" />
+                  <div className="w-16 h-16 bg-gray-600/30 rounded-lg animate-pulse delay-200 hover:scale-110 smooth-transition" />
+                  <div className="w-16 h-16 bg-gray-400/30 rounded-lg animate-pulse delay-500 hover:scale-110 smooth-transition" />
+                </div>
+                <div className="flex justify-center space-x-6 mb-8">
+                  <div className="w-12 h-12 bg-gray-700/40 rounded-full animate-bounce" />
+                  <div className="w-10 h-10 bg-gray-500/40 rounded-full animate-bounce delay-300" />
+                  <div className="w-14 h-14 bg-gray-600/40 rounded-full animate-bounce delay-700" />
+                </div>
               </div>
 
               {/* Main Heading */}
@@ -91,10 +96,12 @@ const Hero = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                {/* Floating elements - Grey/Black/White theme */}
-                <div className="absolute -top-4 -right-4 w-8 h-8 bg-gray-800 rounded-full animate-bounce" />
-                <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-gray-400 rounded-full animate-bounce delay-1000" />
-                <div className="absolute top-1/2 -left-8 w-4 h-4 bg-gray-600 rounded-full animate-bounce delay-500" />
+                {/* Enhanced Floating elements with more animations */}
+                <div className="absolute -top-4 -right-4 w-8 h-8 bg-gray-800 rounded-full animate-bounce hover:animate-pulse" />
+                <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-gray-400 rounded-full animate-bounce delay-1000 hover:animate-spin" />
+                <div className="absolute top-1/2 -left-8 w-4 h-4 bg-gray-600 rounded-full animate-bounce delay-500 hover:animate-ping" />
+                <div className="absolute top-8 -right-8 w-5 h-5 bg-gray-500 rounded-full animate-pulse delay-200" />
+                <div className="absolute -bottom-8 right-8 w-7 h-7 bg-gray-700 rounded-full animate-bounce delay-800" />
               </div>
             </div>
           </div>
