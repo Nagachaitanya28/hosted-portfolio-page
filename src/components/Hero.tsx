@@ -29,35 +29,13 @@ const Hero = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Text Content */}
             <div className="text-white space-y-8">
-              {/* Code Block */}
-              <div className="bg-black/20 backdrop-blur-sm rounded-lg p-6 font-mono text-sm border border-white/10">
-                <div className="text-gray-300">
-                  <span className="text-blue-300">class</span>{" "}
-                  <span className="text-yellow-300">Chaitanya</span>:
-                </div>
-                <div className="pl-4 text-gray-300">
-                  <span className="text-blue-300">def</span>{" "}
-                  <span className="text-green-300">__init__</span>(self):
-                </div>
-                <div className="pl-8 text-gray-300">
-                  self.skills = [<span className="text-orange-300">"Python"</span>, <span className="text-orange-300">"AI"</span>, <span className="text-orange-300">"Cloud"</span>, <span className="text-orange-300">"Web Dev"</span>]
-                </div>
-                <div className="pl-8 text-gray-300">
-                  self.goal = <span className="text-orange-300">"Build. Learn. Conquered"</span>
-                </div>
-                <div className="mt-4 text-gray-300">
-                  <span className="text-blue-300">def</span>{" "}
-                  <span className="text-green-300">status</span>(self):
-                </div>
-                <div className="pl-4 text-gray-300">
-                  <span className="text-purple-300">return</span> f<span className="text-orange-300">"Coding, Learning & Conquering with {"{self.goal}"}"</span>
-                </div>
-                <div className="mt-4 text-gray-300">
-                  me = Chaitanya()
-                </div>
-                <div className="text-gray-300">
-                  print(me.status())
-                </div>
+              {/* Code Block Image */}
+              <div className="bg-black/20 backdrop-blur-sm rounded-lg p-6 border border-white/10">
+                <img
+                  src="/lovable-uploads/2f37e0f6-2ce9-43ba-8e48-6de968f7d0a3.png"
+                  alt="Python Code - Chandavolu Naga Chaitanya"
+                  className="w-full h-auto rounded-md"
+                />
               </div>
 
               {/* Main Heading */}
@@ -113,10 +91,10 @@ const Hero = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                {/* Floating elements */}
-                <div className="absolute -top-4 -right-4 w-8 h-8 bg-blue-500 rounded-full animate-bounce" />
-                <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-green-500 rounded-full animate-bounce delay-1000" />
-                <div className="absolute top-1/2 -left-8 w-4 h-4 bg-yellow-500 rounded-full animate-bounce delay-500" />
+                {/* Floating elements - Grey/Black/White theme */}
+                <div className="absolute -top-4 -right-4 w-8 h-8 bg-gray-800 rounded-full animate-bounce" />
+                <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-gray-400 rounded-full animate-bounce delay-1000" />
+                <div className="absolute top-1/2 -left-8 w-4 h-4 bg-gray-600 rounded-full animate-bounce delay-500" />
               </div>
             </div>
           </div>
