@@ -1,73 +1,129 @@
-# Welcome to your Lovable project
+# Portfolio Website - Naga Chaitanya Chandavolu
 
-## Project info
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/7b154368-bfef-45f6-b3e8-f3a87e1c3207
+## 🚀 Features
 
-## How can I edit this code?
+- **Modern Design**: Clean, professional black/white/grey aesthetic
+- **Responsive**: Works perfectly on all devices
+- **Animated**: Smooth animations and transitions throughout
+- **Interactive**: Engaging hover effects and animations
+- **Optimized**: Fast loading and performance optimized
 
-There are several ways of editing your application.
+## 🛠️ Tech Stack
 
-**Use Lovable**
+- **Frontend**: React 18 + TypeScript
+- **Styling**: Tailwind CSS + Custom CSS
+- **UI Components**: Radix UI (shadcn/ui)
+- **Icons**: Lucide React
+- **Build Tool**: Vite
+- **Deployment**: GitHub Pages
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7b154368-bfef-45f6-b3e8-f3a87e1c3207) and start prompting.
+## 📦 Installation
 
-Changes made via Lovable will be committed automatically to this repo.
+1. Clone the repository:
+```bash
+git clone <your-repo-url>
+cd portfolio-website
+```
 
-**Use your preferred IDE**
+2. Install dependencies:
+```bash
+npm install
+```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Open [http://localhost:8080](http://localhost:8080) in your browser.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🚀 Deployment
 
-**Use GitHub Codespaces**
+This website is configured for automatic deployment to GitHub Pages:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. Push your code to the `main` branch
+2. GitHub Actions will automatically build and deploy
+3. Your site will be available at `https://yourusername.github.io/repository-name`
 
-## What technologies are used for this project?
+### Manual Deployment
 
-This project is built with:
+```bash
+npm run build
+npm run preview
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📁 Project Structure
 
-## How can I deploy this project?
+```
+src/
+├── components/          # React components
+│   ├── ui/             # Reusable UI components
+│   ├── Header.tsx      # Navigation header
+│   ├── Hero.tsx        # Hero section
+│   ├── About.tsx       # About section
+│   ├── Skills.tsx      # Skills section
+│   ├── Projects.tsx    # Projects showcase
+│   ├── Certifications.tsx # Certifications
+│   ├── Contact.tsx     # Contact form
+│   └── Footer.tsx      # Footer
+├── assets/             # Images and static assets
+├── pages/              # Page components
+├── hooks/              # Custom React hooks
+└── lib/                # Utility functions
+```
 
-Simply open [Lovable](https://lovable.dev/projects/7b154368-bfef-45f6-b3e8-f3a87e1c3207) and click on Share -> Publish.
+## ✨ Customization
 
-## Can I connect a custom domain to my Lovable project?
+### Adding Your Resume
+1. Replace `public/resume.pdf` with your actual resume
+2. The download button will automatically serve your file
 
-Yes, you can!
+### Updating Content
+- Edit component files in `src/components/`
+- Update personal information in each section
+- Replace placeholder images in `src/assets/`
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Styling
+- Colors and design tokens: `src/index.css`
+- Component styles: Individual component files
+- Animations: `src/index.css` (custom animations section)
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 🎨 Design System
+
+- **Primary Colors**: Black (#000000)
+- **Background**: White (#FFFFFF)
+- **Accents**: Various grey shades
+- **Typography**: Inter font family
+- **Animations**: Custom CSS animations with smooth transitions
+
+## 📱 Responsive Design
+
+- Mobile-first approach
+- Breakpoints: sm (640px), md (768px), lg (1024px), xl (1280px)
+- Touch-friendly interactions
+
+## 🔧 Configuration
+
+- **Vite Config**: `vite.config.ts`
+- **Tailwind Config**: `tailwind.config.ts`
+- **TypeScript Config**: `tsconfig.json`
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📞 Contact
+
+Naga Chaitanya Chandavolu - [chandavoluchaitanya@gmail.com](mailto:chandavoluchaitanya@gmail.com)
+
+Project Link: [https://github.com/yourusername/portfolio-website](https://github.com/yourusername/portfolio-website)

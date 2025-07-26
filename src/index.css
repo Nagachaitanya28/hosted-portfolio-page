@@ -165,6 +165,18 @@ All colors MUST be HSL.
     animation: glow 2s ease-in-out infinite alternate;
   }
   
+  .animate-slide-in {
+    animation: slideIn 0.6s ease-out;
+  }
+  
+  .animate-fade-up {
+    animation: fadeUp 0.8s ease-out;
+  }
+  
+  .progress-bar-fade {
+    animation: progressFade 2s ease-out;
+  }
+  
   @keyframes float {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-10px); }
@@ -173,5 +185,21 @@ All colors MUST be HSL.
   @keyframes glow {
     from { box-shadow: 0 0 5px hsl(var(--primary) / 0.3); }
     to { box-shadow: 0 0 20px hsl(var(--primary) / 0.6); }
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateX(-100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  
+  @keyframes fadeUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes progressFade {
+    0% { width: 0%; opacity: 0.3; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
   }
 }
