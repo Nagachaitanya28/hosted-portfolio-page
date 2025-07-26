@@ -283,7 +283,7 @@ const Contact = () => {
                   <Button
                     asChild
                     size="lg"
-                    className="bg-transparent border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/50 hover:scale-110 smooth-transition backdrop-blur-sm px-8 py-4 text-lg font-semibold"
+                    className="bg-primary hover:bg-primary/90 text-primary-foreground hover:scale-110 smooth-transition px-8 py-4 text-lg font-semibold"
                   >
                     <a
                       href="https://drive.google.com/uc?export=download&id=1UuheWlCprlyVMFr5QAaORv6f33bg0f9J"
