@@ -283,10 +283,10 @@ const Contact = () => {
                   <Button
                     asChild
                     size="lg"
-                    className="bg-primary hover:bg-primary/90 text-primary-foreground hover:scale-110 smooth-transition px-8 py-4 text-lg font-semibold"
+                    className="bg-foreground hover:bg-foreground/90 text-background hover:scale-110 smooth-transition px-8 py-4 text-lg font-semibold"
                   >
                     <a
-                      href="https://drive.google.com/uc?export=download&id=1UuheWlCprlyVMFr5QAaORv6f33bg0f9J"
+                      href="/resume.pdf"
                       download="Chandavolu_Naga_Chaitanya_Resume.pdf"
                     >
                       <Download className="mr-3 h-5 w-5 animate-bounce" />

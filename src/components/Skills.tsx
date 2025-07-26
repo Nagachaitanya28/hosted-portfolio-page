@@ -59,8 +59,8 @@ const Skills = () => {
                       <span className="text-sm text-muted-foreground">{skill.level}%</span>
                     </div>
                     <div className="relative">
-                      <Progress value={skill.level} className="h-2 shadow-sm progress-bar-fade" />
-                      <div className="absolute inset-0 rounded-full shadow-inner opacity-50 bg-gradient-to-r from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-600"></div>
+                      <Progress value={skill.level} className="h-1.5 shadow-sm progress-bar-fade" />
+                      <div className="absolute inset-0 rounded-full shadow-inner opacity-30 bg-gradient-to-r from-gray-200 to-gray-300 dark:from-gray-700 dark:to-gray-600"></div>
                     </div>
                   </div>
                 ))}
@@ -85,15 +85,19 @@ const Skills = () => {
               </CardContent>
             </Card>
             
-            {/* AI & ML Specialization - Compact */}
-            <Card className="p-4 bg-gradient-to-r from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 border-2 border-primary/20 hover-shadow smooth-transition hover:scale-[1.02] animate-slide-in">
+            {/* AI & ML Specialization - Aesthetic */}
+            <Card className="p-4 bg-gradient-to-br from-primary/5 to-primary/10 border border-primary/20 hover-shadow smooth-transition hover:scale-[1.02] animate-slide-in backdrop-blur-sm">
               <CardHeader className="pb-2">
-                <h3 className="text-xl font-bold text-primary text-center">⚫ AI & ML Specialization ⚫</h3>
+                <div className="flex items-center justify-center space-x-2">
+                  <div className="w-3 h-3 rounded-full bg-primary animate-pulse"></div>
+                  <h3 className="text-xl font-bold text-primary text-center">AI & ML Specialization</h3>
+                  <div className="w-3 h-3 rounded-full bg-primary animate-pulse"></div>
+                </div>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap justify-center gap-2">
                   {aiMlSkills.map((skill, index) => (
-                    <Badge key={index} variant="secondary" className="px-3 py-1 text-xs font-semibold hover:scale-110 smooth-transition hover:shadow-lg animate-pulse bg-gray-600 text-white hover:bg-gray-700" style={{animationDelay: `${index * 100}ms`}}>
+                    <Badge key={index} variant="secondary" className="px-3 py-1 text-xs font-semibold hover:scale-110 smooth-transition hover:shadow-lg animate-pulse bg-primary/20 text-primary border-primary/30 hover:bg-primary/30" style={{animationDelay: `${index * 100}ms`}}>
                       {skill}
                     </Badge>
                   ))}
